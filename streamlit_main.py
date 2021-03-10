@@ -21,6 +21,7 @@ stc.html("<h1 style='text-align: center'>Gluon Style Transfer</h1>")
 col_img= st.beta_columns(3)
 
 selected_original_image = ''
+selected_style_image = ''
 
 with col_img[0]:
     st.header("original image")
