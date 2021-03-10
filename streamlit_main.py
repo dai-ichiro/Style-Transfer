@@ -7,8 +7,8 @@ import net
 import utils
 
 ### setting ###
-ctx = mx.cpu()
-content_size = 512
+ctx = mx.gpu()
+content_size = 1024
 ### setting ###
 
 def load_model():
