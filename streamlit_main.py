@@ -38,10 +38,10 @@ with col_img[2]:
     result_image = st.empty()
 
 if selected_original_image != None:
-    original_image.image(selected_original_image)
+    original_image.image(selected_original_image, use_column_width=True)
 
 if selected_style_image != None:
-    style_image.image(selected_style_image)
+    style_image.image(selected_style_image, use_column_width=True)
 
 if (selected_original_image != None) & (selected_style_image != None):
 
@@ -57,5 +57,5 @@ if (selected_original_image != None) & (selected_style_image != None):
     output = output.transpose(1, 2, 0)
     output = output[:,:,[2,1,0]]    
 
-    result_image.image(output)
+    result_image.image(output, use_column_width=True)
 
