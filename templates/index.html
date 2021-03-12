@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 class="m-5" style="text-align: center;">Style Transfer</h1>
+  <div class="container">
+
+    <div class="row">  
+        <div class="col-4">
+            {% if img1 != '' %}
+            <img class="img-fluid" border="0" src="{{ url_for('static', filename=img1) }}">
+            {% endif %}
+        </div>
+        <div class="col-4">
+            {% if img2 != '' %}            
+            <img class="img-fluid" border="0" src="{{ url_for('static', filename=img2) }}">
+            {% endif %}
+        </div>
+        <div class="col-4">
+            {% if img3 != '' %}
+            <img class="img-fluid" border="0" src="{{ url_for('static', filename= img3) }}">
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="m-5 mb-3">
+                <form action='/upload/1' method='POST' enctype=multipart/form-data>
+                    <input class="form-control" type="file" name="file" id="formFile" required>
+                    <input type="submit" value="Upload">
+                </form>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="m-5 mb-3">
+                <form action='/upload/2' method='POST' enctype=multipart/form-data>
+                    <input class="form-control" type="file" name="file" id="formFile" required>
+                    <input type="submit" value="Upload">
+                </form>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="m-5 mb-3">
+                <a class="btn btn-outline-primary" href="/transfer" >実行</a>
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}
