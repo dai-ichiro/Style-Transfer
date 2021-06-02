@@ -4,7 +4,7 @@ My repository is based on https://github.com/StacyYang/MXNet-Gluon-Style-Transfe
 
 ## How To Use
 ~~~
-git clone -b new-flask-cpu https://github.com/dai-ichiro/Style-Transfer.git
+git clone -b flask2.0-cpu https://github.com/dai-ichiro/Style-Transfer.git
 cd Style-Transfer
 python models/download_model.py
 python app.py
