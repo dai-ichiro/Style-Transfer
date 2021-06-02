@@ -24,8 +24,7 @@ result_image = ''
 def index():
     return render_template('index.html', img1=original_image, img2=style_image, img3=result_image)
 
-#@app.route('/upload/<int:id>', methods=['POST'])
-@app.post('/upload/<int:id>')
+@app.route('/upload/<int:id>', methods=['POST'])
 def file_upload(id):
     global original_image
     global style_image
