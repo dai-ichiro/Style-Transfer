@@ -10,4 +10,4 @@ python models/download_model.py
 python app.py
 ~~~
 
-https://touch-sp.hatenablog.com/entry/2021/03/21/111153
+https://touch-sp.hatenablog.com/entry/2021/06/03/010000
